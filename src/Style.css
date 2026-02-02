@@ -741,3 +741,106 @@
 
 
 /* ////////////////////////////////////// */
+
+
+
+/* ////////////// ADMIN DASHBOARD ///////// */
+
+
+
+.admin-main-container {
+    background: #050505;
+    min-height: 100vh;
+    color: white;
+}
+
+.admin-first-container {
+    padding: 120px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.admin-content-box {
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+}
+
+.admin-title {
+    color: #d4af37;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.admin-subtitle {
+    color: #888;
+    margin-bottom: 40px;
+}
+
+.admin-table-container {
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 4px;
+    overflow-x: auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.admin-data-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.admin-data-table th {
+    background: #1a1a1a;
+    color: #d4af37;
+    padding: 20px;
+    border-bottom: 2px solid #d4af37;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.admin-data-table td {
+    padding: 15px 20px;
+    border-bottom: 1px solid #222;
+    color: #ccc;
+}
+
+.admin-td-name {
+    color: white;
+    font-weight: bold;
+}
+
+.admin-data-table tr:hover {
+    background: #161616;
+}
+
+.admin-loader {
+    color: #d4af37;
+    font-size: 1.2rem;
+    margin-top: 50px;
+}
+
+.admin-delete-btn {
+    background: transparent;
+    color: #ff4d4d;
+    border: 1px solid #ff4d4d;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+    font-weight: bold;
+}
+
+.admin-delete-btn:hover {
+    background: #ff4d4d;
+    color: white;
+    box-shadow: 0 0 10px rgba(255, 77, 77, 0.4);
+}
+
+
+
+/* /////////////////////////////////// */
