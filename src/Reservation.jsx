@@ -61,7 +61,7 @@ const Reservation = () => {
                         </div>
 
                         <input type="time" name="time" value={formData.time} onChange={handleChange} required className="reservation-input-field" />
-
+                            <p className="reservation-note">Note: Tables are reserved for 1 hour from the booking time.</p>
                         <button type="submit" className="reservation-submit-btn">
                             {status.type === 'loading' ? 'Booking...' : 'CONFIRM RESERVATION'}
                         </button>
