@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import Navbar from './Components/Navbar';
 // import './Reservation.css'; 
 
+// Get today's date in YYYY-MM-DD format
+const today = new Date().toISOString().split("T")[0];
+
 const Reservation = () => {
     const [formData, setFormData] = useState({
         name: '',
@@ -57,10 +60,10 @@ const Reservation = () => {
                         
                         <div className="reservation-input-group">
                             <input type="number" name="guests" placeholder="Guests" min="1" value={formData.guests} onChange={handleChange} required className="reservation-input-field" />
-                            <input type="date" name="date" value={formData.date} onChange={handleChange} required className="reservation-input-field" />
+                            <input type="date" name="date" min={today} value={formData.date} onChange={handleChange} required className="reservation-input-field" />
                         </div>
 
-                        <input type="time" name="time" value={formData.time} onChange={handleChange} required className="reservation-input-field" />
+                        <input type="time" name="time" min="10:00" max="23:00" value={formData.time} onChange={handleChange} required className="reservation-input-field" />
                             <p className="reservation-note">Note: Tables are reserved for 1 hour from the booking time.</p>
                         <button type="submit" className="reservation-submit-btn">
                             {status.type === 'loading' ? 'Booking...' : 'CONFIRM RESERVATION'}
